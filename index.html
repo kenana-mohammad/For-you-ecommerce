@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You Store</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome (icons for contact and footer) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="container">
+            <div class="sec-nav">
+                <a href="#hero" class="nav-logo">
+                    <img src="./assets/images/logo.svg" alt="for you logo" class="nav-logo-mark">
+                    <h1>for you</h1>
+                </a>
+                <div class="nav-right">
+                    <button class="cart-btn" id="cartBtn" aria-label="Open cart">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </button>
+                    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <ul id="navMenu">
+                        <li><a href="#hero">home</a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#products">products</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero section -->
+    <section id="hero">
+        <div class="circle"></div>
+        <div class="circle-2"></div>
+        <div class="container">
+            <div class="hero">
+                <div class="hero-text">
+                    <span class="eyebrow">New Collection</span>
+                    <h2>Style that feels like you</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore at odit in itaque deleniti quam architecto excepturi, officiis, dignissimos voluptatum amet? Itaque sequi, cum odit doloribus deserunt eligendi tempora maxime!
+                    </p>
+                </div>
+                <div class="hero-img-wrap">
+                    <img src="./assets/images/1.jpg" alt="Featured product from the collection" loading="eager" />
+                </div>
+            </div>
+            <div class="btn hero-cta" style="margin-top: 25px;">
+                <button>shop now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section id="about">
+        <div class="container">
+            <div class="sec-title reveal">
+                <h2 class="title">about us</h2>
+            </div>
+            <div class="about reveal">
+                <img src="./assets/images/im.jpg" alt="Our team and store story" loading="lazy">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore at odit in itaque deleniti quam architecto excepturi, officiis, dignissimos voluptatum amet? Itaque sequi, cum odit doloribus deserunt eligendi tempora maxime! Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products & tabs section -->
+    <section id="products">
+        <div class="container">
+            <div class="sec-title reveal">
+                <h2 class="title">products</h2>
+            </div>
+
+            <!-- Tab buttons -->
+            <div class="tabs-header reveal">
+                <button class="btn-tab active" data-target="tshirts">T-Shirts</button>
+                <button class="btn-tab" data-target="shoes">Shoes</button>
+                <button class="btn-tab" data-target="accessories">Accessories</button>
+            </div>
+
+            <!-- Product content per tab -->
+            <div class="tabs-content">
+                <!-- T-Shirts -->
+                <div class="tab-pane active" id="tshirts">
+                    <div class="product-grid reveal-stagger">
+                        <div class="product-card">
+                            <a href="product-details.html?id=1">
+                                <img src="./assets/images/t2.webp" alt="Classic oversized t-shirt" loading="lazy">
+                            </a>
+                            <div class="card-body">
+                                <span class="product-category">Men Fashion</span>
+                                <h3 class="product-title">
+                                    <a href="product-details.html?id=1">Classic Oversized T-Shirt</a>
+                                </h3>
+                                <div class="product-pricing">
+                                    <span class="price-current">$75.00</span>
+                                    <span class="price-old">$100.00</span>
+                                </div>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a href="product-details.html?id=1">
+                                <img src="./assets/images/3.jfif" alt="Classic oversized t-shirt" loading="lazy">
+                            </a>
+                            <div class="card-body">
+                                <span class="product-category">Men Fashion</span>
+                                <h3 class="product-title">
+                                    <a href="product-details.html?id=1">Classic Oversized T-Shirt</a>
+                                </h3>
+                                <div class="product-pricing">
+                                    <span class="price-current">$75.00</span>
+                                    <span class="price-old">$100.00</span>
+                                </div>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <a href="product-details.html?id=2">
+                                <img src="./assets/images/2.jfif" alt="Casual cotton t-shirt" loading="lazy">
+                            </a>
+                            <div class="card-body">
+                                <span class="product-category">Men Fashion</span>
+                                <h3 class="product-title">
+                                    <a href="product-details.html?id=2">Cotton Casual T-Shirt</a>
+                                </h3>
+                                <div class="product-pricing">
+                                    <span class="price-current">$75.00</span>
+                                    <span class="price-old">$100.00</span>
+                                </div>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shoes -->
+                <div class="tab-pane" id="shoes">
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <a href="product-details.html?id=2">
+                                <img src="./assets/images/s2.jpg" alt="Running sports shoe" loading="lazy">
+                            </a>
+                            <div class="card-body">
+                                <h3 class="product-title">Running Sports Shoes</h3>
+                                <p class="product-desc">High performance running shoes.</p>
+                                <span class="price-current">$120.00</span>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a href="product-details.html?id=2">
+                                <img src="./assets/images/s1.jpg" alt="Casual leather shoe" loading="lazy">
+                            </a>
+                            <div class="card-body">
+                                <h3 class="product-title">Casual Leather Shoes</h3>
+                                <p class="product-desc">Classic leather design.</p>
+                                <span class="price-current">$150.00</span>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accessories -->
+                <div class="tab-pane" id="accessories">
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <a href="product-details.html?id=2">
+                                <img src="./assets/images/a1.jpg" alt="Minimalist wristwatch" loading="lazy">
+                            </a>
+                            <div class="card-body">
+                                <h3 class="product-title">Minimalist Watch</h3>
+                                <p class="product-desc">Elegant everyday watch.</p>
+                                <span class="price-current">$85.00</span>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a href="product-details.html?id=2">
+                                <img src="./assets/images/a4.jpg" alt="Genuine leather wallet" loading="lazy">
+                            </a>
+                            <div class="card-body">
+                                <h3 class="product-title">Leather Wallet</h3>
+                                <p class="product-desc">Pure genuine leather.</p>
+                                <span class="price-current">$45.00</span>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact">
+        <div class="container">
+            <div class="sec-title reveal">
+                <h2 class="title">contact us</h2>
+            </div>
+
+            <div class="section-contact reveal">
+                <form class="contact-form">
+                    <div class="input-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter name" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter email" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Enter message" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+
+                <ul class="info">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>123 Main St, Anytown, USA</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <p>123-456-7890</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <p>info@example.com</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-col footer-brand">
+                    <a href="#hero" class="nav-logo">
+                        <img src="./assets/images/logo.svg" alt="for you logo" class="nav-logo-mark">
+                        <h1>for you</h1>
+                    </a>
+                    <p>
+                        Your go-to spot for simple, elegant everyday fashion — pieces picked with care to match your style, no fuss.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="#products">T-Shirts</a></li>
+                        <li><a href="#products">Shoes</a></li>
+                        <li><a href="#products">Accessories</a></li>
+                        <li><a href="#products">New Arrivals</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col footer-newsletter">
+                    <h4>Stay in the loop</h4>
+                    <p>Subscribe to get the latest deals and new collections first.</p>
+                    <form class="footer-newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> for you. All rights reserved.</p>
+                <p><a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart drawer -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+        <div class="cart-drawer-header">
+            <h3>Your Cart</h3>
+            <button id="cartClose" aria-label="Close cart"><i class="fas fa-times"></i></button>
+        </div>
+        <ul class="cart-items" id="cartItems">
+            <li class="cart-empty" id="cartEmpty">Your cart is empty.</li>
+        </ul>
+        <div class="cart-drawer-footer">
+            <div class="cart-subtotal-row">
+                <span>Subtotal</span>
+                <span id="cartSubtotal">$0.00</span>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn">Checkout</button>
+        </div>
+    </aside>
+
+    <!-- Back to top -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript File -->
+    <script src="./assets/js/script.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
